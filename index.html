@@ -228,7 +228,7 @@
     </div>
   </section>
 
-  <section id="gallery" class="gallery">
+  <!-- <section id="gallery" class="gallery">
     <div class="container" data-aos="fade-up" data-aos-duration="1000">
       <div class="row justify-content-center judul">
         <div class="col-md-8 col-10 text-center">
@@ -258,7 +258,7 @@
         </div>
     </div>
   </div>
-  </section>
+  </section> -->
 
   
 
@@ -289,6 +289,51 @@
 
     </div>
   </section> -->
+
+  <section id="rsvp" class="rsvp">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <h2>Konfirmasi Kehadiran</h2>
+          <p>Mohon konfirmasi kehadiran Anda dengan mengisis form berikut.</p>
+        </div>
+      </div>
+
+      <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST"
+        action="https://script.google.com/macros/s/AKfycbyotyK7YMQFZ1YYlTYCm0JAtE9-xSZI9DjdvmhGi1I-o_Cxd-dJUPfUy0L5YdXT1l-Tow/exec"
+        id="my-form" novalidate>
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="nama" name="nama" required="">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="status" class="form-label">Konfirmasi</label>
+            <select name="status" id="status" class="form-select">
+              <option selected>Pilih salah satu</option>
+              <option value="Hadir">Hadir</option>
+              <option value="Tidak Hadir">Tidak Hadir</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="mb-3">
+           <label for="ucapan" class="form-label">Ucapan</label>
+             <textarea 
+              class="form-control" 
+              id="ucapan" 
+              name="ucapan" 
+              rows="3"></textarea>
+          </div>
+        </div>
+        <div class="col-12" style="margin-top: 35px;">
+          <button class="btn btn-primary">Kirim Kehadiran</button>
+        </div>
+      </form>
+    </div>
+  </section>
 
   <section id="kado" class="kado">
     <div class="container" data-aos="fade-up" data-aos-duration="1000">
@@ -393,51 +438,6 @@
     }, 2000);
   }
 </script>
-
-<section id="rsvp" class="rsvp">
-    <div class="container" data-aos="fade-up" data-aos-duration="1000">
-      <div class="row justify-content-center">
-        <div class="col-md-8 col-10 text-center">
-          <h2>Konfirmasi Kehadiran</h2>
-          <p>Mohon konfirmasi kehadiran Anda dengan mengisis form berikut.</p>
-        </div>
-      </div>
-
-      <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST"
-        action="https://script.google.com/macros/s/AKfycbyotyK7YMQFZ1YYlTYCm0JAtE9-xSZI9DjdvmhGi1I-o_Cxd-dJUPfUy0L5YdXT1l-Tow/exec"
-        id="my-form" novalidate>
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="nama" class="form-label">Nama</label>
-            <input type="text" class="form-control" id="nama" name="nama" required="">
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="status" class="form-label">Konfirmasi</label>
-            <select name="status" id="status" class="form-select">
-              <option selected>Pilih salah satu</option>
-              <option value="Hadir">Hadir</option>
-              <option value="Tidak Hadir">Tidak Hadir</option>
-            </select>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="mb-3">
-           <label for="ucapan" class="form-label">Ucapan</label>
-             <textarea 
-              class="form-control" 
-              id="ucapan" 
-              name="ucapan" 
-              rows="3"></textarea>
-          </div>
-        </div>
-        <div class="col-12" style="margin-top: 35px;">
-          <button class="btn btn-primary">Kirim Kehadiran</button>
-        </div>
-      </form>
-    </div>
-  </section>
 
   <section id="penutup" class="penutup">
     <div class="container" data-aos="fade-up" data-aos-duration="1000">
